@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="menu_active.png" />
+    <None Remove="menu_inactive.png" />
+    <None Remove="profile_active.png" />
+    <None Remove="profile_inactive.png" />
+    <None Remove="Users\Editor\mainnews.jpg" />
+    <None Remove="Users\Manager\burberry_jacket.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="menu_active.png" />
+    <Resource Include="menu_inactive.png" />
+    <Resource Include="profile_active.png" />
+    <Resource Include="profile_inactive.png" />
+    <Resource Include="Users\Editor\mainnews.jpg" />
+    <Resource Include="Users\Manager\burberry_jacket.jpg" />
+  </ItemGroup>
+
+</Project>
